@@ -3,9 +3,6 @@ import React, {Component} from 'react';
 import {View, Text, TextInput, Button, Alert, StyleSheet} from 'react-native';
 import Voice from 'react-native-voice';
 import Tts from 'react-native-tts';
-
-const numbers = [1, 2, 3, 4, 5];
-
     
 export default class Main extends Component {   
     constructor(props) {
@@ -30,8 +27,6 @@ export default class Main extends Component {
     return (
       <View style={estilo.tela} onTouchEnd={() => Voice.start('pt-BR')}>
         <TextInput editable={false} style={estilo.txt} onSpeechPartial>{this.state.texto}</TextInput>
-         <TextInput><li>{6}</li></TextInput>
-        
       </View>
     );
   }
